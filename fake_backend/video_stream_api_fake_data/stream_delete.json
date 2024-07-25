@@ -1,0 +1,9 @@
+{
+  "_url": "/stream/a12345678",
+  "_method": "DELETE",
+  "code": 0,
+  "message": "success",
+  "requestID": "xxxx-xxx-xxx",
+  "processTime": "45",
+  "data": {}
+}

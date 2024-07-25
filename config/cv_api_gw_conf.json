@@ -1,0 +1,37 @@
+{
+  "system": {
+    "version": "V20210824-1650",
+    "listenAddr": "0.0.0.0",
+    "listenPort": "5656",
+    "logLevel": "debug",
+    "fakeBackend": false,
+    "fakeBackendFilePath": "./fake_backend/",
+    "webRoot": "/root/test-web/static/",
+    "defaultBackend": {
+      "backendService1": "http://{IP}:9090",
+      "backendService2": "http://{IP}:32080",
+      "backendService3": "http://{IP}:20020",
+      "backendService4": "http://{IP}:18000"
+    }
+  },
+  "log": {
+    "logLevel": "debug",
+    "logOutput": "console,file",
+    "logFilePath": "./httpapi_transponder.log",
+    "logFileSize": "100M",
+    "logFileNumber": "10"
+  },
+  "mysql": {
+    "host": "{IP}",
+    "port": "3306",
+    "user": "db_user",
+    "password": "db_pass",
+    "schema": "httpapi_transponder"
+  },
+  "grpcForward": {
+    "listenPort" : "",
+    "pushAddress" : [
+      ""
+    ]
+  }
+}

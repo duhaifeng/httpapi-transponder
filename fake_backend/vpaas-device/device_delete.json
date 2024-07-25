@@ -1,0 +1,6 @@
+{
+  "_url": "/brand/xx/devices?ids=device-001",
+  "_method": "DELETE",
+  "code": 0,
+  "message": "string"
+}

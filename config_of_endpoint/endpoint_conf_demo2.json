@@ -1,0 +1,74 @@
+[
+  {
+    "endpoint": "/v1/imageGroup",
+    "method": "POST",
+    "validateRule": "ImageGroupValidation",
+    "backend": [
+      {
+        "urlPattern": "/imageGroup",
+        "method": "POST",
+        "host": [
+          "{defaultBackend.backendService1}"
+        ],
+        "bodyFieldOperation": [
+          {
+            "fieldName": "imageGroupID",
+            "operation": "move",
+            "destName": "groupID",
+            "formatConverter": "Create_ID_On_Empty"
+          },
+          {
+            "fieldName": "imageGroupName",
+            "operation": "move",
+            "destName": "name"
+          },
+          {
+            "fieldName": "groupID",
+            "operation": "append",
+            "value": "",
+            "formatConverter": "Create_ID_On_Empty",
+            "description": "这里演示通过append操作生成一个值，塞到向后端请求的Body中，如果client端传入了空，则触发formatConverter自动生成一个"
+          },
+          {
+            "fieldName": "positive",
+            "operation": "append",
+            "value": true,
+            "description": "这里演示通过append操作生成一个固定的值，塞到向后端请求的Body中"
+          }
+        ],
+        "responseFieldOperation": [
+          {
+            "fieldName": "data",
+            "operation": "move",
+            "destName": "data.imageGroup"
+          },
+          {
+            "fieldName": "data.groupID",
+            "operation": "move",
+            "destName": "data.imageGroup.imageGroupID"
+          },
+          {
+            "fieldName": "data.name",
+            "operation": "move",
+            "destName": "data.imageGroup.imageGroupName"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "endpoint": "/v1/imageGroup/{groupID}",
+    "method": "DELETE",
+    "backend": [
+      {
+        "urlPattern": "/imageGroup/{url:path.[3]}",
+        "method": "DELETE",
+        "host": [
+          "{defaultBackend.backendService1}"
+        ],
+        "description": "这里演示了如何从源请求的URL路径中获取指定层次Value({url:path.[3]}={groupID})，并作为后端动态请求URL中的一部分"
+      }
+    ]
+  }
+]
+

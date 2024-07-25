@@ -1,0 +1,10 @@
+{
+  "_url": "/imageRegister/group",
+  "_method" : "POST",
+  "code": 100,
+  "message": "success",
+  "processTimeInMs": 199,
+  "serialNo": "a12345678",
+  "timestamp": 1623656295498
+}
+

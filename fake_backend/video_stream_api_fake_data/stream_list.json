@@ -1,0 +1,27 @@
+{
+  "_url": "/streams",
+  "_method" : "GET",
+  "code":0,
+  "message":"success",
+  "requestID":"xxxx-xxx-xxx",
+  "processTime":"45",
+  "pagination":{
+    "pageNo":3,
+    "pageSize":50,
+    "pageCount":23
+  },
+  "data":{
+    "streamList":[
+      {
+        "deviceID":"a12345678",
+        "streamName":"摄像头1拉流",
+        "outerStreamAddress":"rtsp://xxxxxxxx",
+        "innerStreamAddress":"rtsp://xxxxxxxx",
+        "originalWebPreview":"ws://xxxxxxxx",
+        "algoWebPreview":"ws://xxxxxxxx",
+        "remark":"",
+        "createTime":"2020-06-15T13:45:30"
+      }
+    ]
+  }
+}

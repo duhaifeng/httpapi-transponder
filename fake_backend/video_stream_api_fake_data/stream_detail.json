@@ -1,0 +1,18 @@
+{
+  "_url": "/stream/a12345678",
+  "_method": "GET",
+  "code": 0,
+  "message": "success",
+  "requestID": "6172927d-aa65-4817-9973-3f12180c792f",
+  "processTime": 1719,
+  "data": {
+    "stream": {
+      "deviceID": "a12345678",
+      "outerStreamAddress": "rtsp://admin:pass@192.168.1.56:554/Streaming/Channels/001",
+      "innerStreamAddress": "rtmp://127.0.0.1/live/a12345678",
+      "originalWebPreview": "http://192.168.1.36/live/a12345678.flv",
+      "algoWebPreview": "http://192.168.1.36/live/a12345678_intel.flv",
+      "createTime": "2021-06-29T16:17:49+08:00"
+    }
+  }
+}

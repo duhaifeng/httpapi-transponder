@@ -1,0 +1,29 @@
+{
+  "_url": "/imageRegister/groups",
+  "_method" : "GET",
+  "code": 100,
+  "groupList": [
+    {
+      "groupHighThreshold": 0.550000011920929,
+      "groupID": "xxxx",
+      "groupInfo": "xxxx-group1-info",
+      "groupLowThreshold": 0.44999998807907104,
+      "groupName": "xxxx-group1",
+      "groupType": 0,
+      "itemType": 0
+    },
+    {
+      "groupHighThreshold": 0.550000011920929,
+      "groupID": "xx",
+      "groupInfo": "xx",
+      "groupLowThreshold": 0.44999998807907104,
+      "groupName": "xx",
+      "groupType": 0,
+      "itemType": 0
+    }
+  ],
+  "message": "success",
+  "processTimeInMs": 0,
+  "serialNo": "1623658327866",
+  "timestamp": 1623658327866
+}

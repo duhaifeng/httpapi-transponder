@@ -1,0 +1,17 @@
+{
+  "_url": "/imageRegister/group/groupID",
+  "_method" : "GET",
+  "code": 100,
+  "groupHighThreshold": 0.550000011920929,
+  "groupID": "11",
+  "groupInfo": "11",
+  "groupLowThreshold": 0.44999998807907104,
+  "groupName": "11",
+  "groupType": 0,
+  "itemCount": 0,
+  "itemType": 0,
+  "message": "success",
+  "processTimeInMs": 12,
+  "serialNo": "1623656051026",
+  "timestamp": 1623656051038
+}

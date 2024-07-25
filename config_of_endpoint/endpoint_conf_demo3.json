@@ -1,0 +1,37 @@
+[
+  {
+    "endpoint": "/v1/task/types",
+    "method": "GET",
+    "description": "第一版先复用Scene列表作为任务类型列表",
+    "backend": [
+      {
+        "urlPattern": "/taskManager/brand/{env:userID}/scenes",
+        "description": "这里演示如何从环境变量中获取userID，并作为后端请求URL中一部分",
+        "method": "GET",
+        "host": [
+          "{defaultBackend.backendService2}"
+        ],
+        "responseFieldOperation": [
+          {
+            "fieldName": "scenes.[*].applicationSet",
+            "operation": "del"
+          },
+          {
+            "fieldName": "scenes.[*].category",
+            "operation": "del"
+          },
+          {
+            "fieldName": "scenes.[*].algoSet",
+            "operation": "del"
+          },
+          {
+            "fieldName": "scenes.[*].id",
+            "operation": "move",
+            "destName": "taskType.[*].taskTypeID"
+          }
+        ]
+      }
+    ]
+  }
+]
+

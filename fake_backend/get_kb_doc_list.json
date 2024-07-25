@@ -1,0 +1,42 @@
+{
+  "_url": "/v1/document/list?kb_id=f972e8e4378e11ef9e5b0242ac120006&page=1&page_size=10",
+  "_method": "GET",
+  "data": {
+    "docs": [
+      {
+        "chunk_num": 6,
+        "create_date": "Mon, 01 Jul 2024 09:48:18 GMT",
+        "create_time": 1719827298192,
+        "created_by": "dba2933c378e11ef91090242ac120006",
+        "id": "0b57ac0c378f11efa4e90242ac120006",
+        "kb_id": "f972e8e4378e11ef9e5b0242ac120006",
+        "location": "高通深耕印度市场.txt",
+        "name": "高通深耕印度市场.txt",
+        "parser_config": {
+          "chunk_token_num": 128,
+          "layout_recognize": true,
+          "raptor": {
+            "use_raptor": false
+          }
+        },
+        "parser_id": "naive",
+        "process_begin_at": "Mon, 01 Jul 2024 09:48:24 GMT",
+        "process_duation": 5.03871,
+        "progress": 1.0,
+        "progress_msg": "\nTask has been received.\nStart to parse.\nFinish parsing.\nFinished slicing files(6). Start to embedding the content.\nFinished embedding(2.60)! Start to build index!\nDone!",
+        "run": "3",
+        "size": 2286,
+        "source_type": "local",
+        "status": "1",
+        "thumbnail": null,
+        "token_num": 958,
+        "type": "doc",
+        "update_date": "Fri, 05 Jul 2024 03:19:41 GMT",
+        "update_time": 1720149581132
+      }
+    ],
+    "total": 10
+  },
+  "retcode": 0,
+  "retmsg": "success"
+}

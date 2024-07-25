@@ -1,0 +1,47 @@
+[
+  {
+    "endpoint": "/v1/device",
+    "method": "POST",
+    "validateRule": "DeviceValidation",
+    "backend": [
+      {
+        "urlPattern": "/v1/device",
+        "method": "POST",
+        "dropResponse": true,
+        "host": [
+          "{defaultBackend.backendService2}"
+    ]
+  }
+]
+  },
+  {
+    "endpoint": "/v1/devices/tree",
+    "method": "GET",
+    "backend": [
+      {
+        "urlPattern": "/v1/organization/0/devices",
+        "method": "GET",
+        "host": [
+          "{defaultBackend.backendService2}"
+        ]
+      }
+    ]
+  },
+  {
+    "endpoint": "/v1/device/{deviceID}",
+    "method": "PUT",
+    "validateRule": "DeviceValidation",
+    "backend": [
+      {
+        "urlPattern": "/v1/device/{deviceID}",
+        "method": "PUT",
+        "dropResponse": true,
+        "description": "同步向StreamProxy修改设备信息",
+        "host": [
+          "{defaultBackend.backendService2}"
+        ]
+      }
+    ]
+  }
+]
+

@@ -1,0 +1,21 @@
+{
+  "_url": "/brand/xx/devices/device-001",
+  "_method": "GET",
+
+  "code": 0,
+  "message": "success",
+  "device": {
+    "id": "device-001",
+    "name": "",
+    "info": "http://192.168.1.36:8090/flv/live.flv/?host=hik57&channel=1",
+    "fps": 4,
+    "parentCode": "0-0",
+    "longitude": 22,
+    "latitude": 0,
+    "url": "rtsp://192.168.1.36:6655/live/?host=hik55&channel=1",
+    "status": 0,
+    "type": "",
+    "createTime": "2021-05-20T02:05:04Z",
+    "updateTime": "2021-05-21T07:15:25Z"
+  }
+}
